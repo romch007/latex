@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+
+\title{Test du LaTex}
+\author{Romain Chardiny}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+
+\begin{document}
+	\maketitle
+	
+	\section{Définitions basiques}
+	
+	\subsection{Applications}
+	
+	Soit $f: E \to F $. \\
+	$f$ est injective $\Leftrightarrow \forall x,x' \in E, f(x) = f(x') \Rightarrow x = x'$
+	
+	\subsection{Valeur absolue}
+	
+	Soit $x \in \mathbb{R}$.
+	
+	\begin{equation*}
+	|x| =
+		\begin{cases}
+			-x & \text{si } x < 0 \\
+			x  & \text{si } x \geq 0
+		\end{cases}
+	\end{equation*}
+	
+	\subsection{Matrices}
+	
+	Soit $X = \begin{pmatrix} 
+	a & b \\
+	c & d
+	\end{pmatrix}$ où $a,b,c,d \in \mathbb{K}$. \\
+	Si $ad - bc \ne 0$ alors :
+	
+	\[
+	X^{-1} = \frac{1}{ad - bc} \begin{pmatrix}
+	d & -b \\
+	-c & a
+	\end{pmatrix}
+	\]
+
+	
+\end{document}
