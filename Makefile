@@ -1,4 +1,10 @@
 
+.PHONY: all
+all: math.pdf pres.pdf
+
+%.pdf: %.tex
+	pdflatex -pdf $<
+
 clean:
 	rm -rf *.aux
 	rm -rf *.fdb_latexmk
